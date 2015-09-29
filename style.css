@@ -1,0 +1,59 @@
+@charset "utf-8";
+/* CSS Document */
+
+@-webkit-keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: -2336px 0; }
+}
+
+
+#animate-area{ 
+	position: absolute;
+    top: 0px;
+    width: 100%; 
+    height: 768px;
+    z-index: 0;
+	background-image:url(cartoon_clouds_and_blue_sky-wallpaper-1366x768.jpg);
+   
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    min-width: 500px;
+
+    animation: animatedBackground 60s linear infinite;
+    -ms-animation: animatedBackground 60s linear infinite;
+    -moz-animation: animatedBackground 60s linear infinite;
+    -webkit-animation: animatedBackground 60s linear infinite;
+}
+
+
+.image{
+	width:20%;
+	height:20%;
+	margin:20%;
+	-webkit-animation: mover 2s infinite  alternate;
+    animation: mover 2s infinite  alternate;
+}
+
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-150px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-150px); }
+}
+
+#plane : target{
+	transform: translate(0,-350px);
+    -webkit-transform: translate(0,-350px);
+    -o-transform: translate(0,-350px); 
+    -moz-transform: translate(0,-350px);
+	}
+#Down : target{
+	transform: translate(0,350px);
+    -webkit-transform: translate(0,350px);
+    -o-transform: translate(0,350px); 
+    -moz-transform: translate(0,350px);
+	
+}	
+	
